@@ -1,0 +1,57 @@
+schema myStruct;
+choices myEnum;
+
+task empty myFunc(num x) {
+    display("Inside function");
+    giveback x;
+}
+
+nubula {
+    num myVar = 10;
+    dec myFloat = 3.14;
+    huge myDouble = 2.718;
+    letter myChar = 'a';
+    empty myVoid;
+
+    display("Hello World");
+    intake("userInput");
+    
+    maybe (myVar == 10) {
+        display("Var is 10");
+    } otherwise {
+        display("Var is not 10");
+    }
+
+    loop (num i = 0; i < 5; i++) {
+        maybe (i == 3) { stop; }
+        maybe (i == 1) { next; }
+    }
+
+    repeat (myVar > 0) {
+        myVar--;
+    }
+
+    do_repeat {
+        myVar++;
+    } repeat (myVar < 5);
+
+    match (myVar) {
+        option 1:
+            display("One");
+            stop;
+        fallback:
+            display("Other");
+    }
+
+    add(5, 10);
+    mult(2, 3);
+    is_even(4);
+    calc_fact(5);
+    calc_pow(2, 3);
+    is_prime(7);
+    is_palin("abba");
+    is_leap(2024);
+    calc_sin(45);
+    calc_cos(60);
+    calc_tan(45);
+}
