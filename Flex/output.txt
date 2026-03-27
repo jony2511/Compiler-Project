@@ -1,0 +1,42 @@
+
+main function start end
+{
+ integer hi , hi2 ;
+ float hii , hii2 ;
+ char hiii , hiii2 ;
+ hi = 10 ; 
+ hii = 100.190002 ;
+ hii2 = hi + hii ;
+ hii2 = hi - hii ;
+ hii2 = hi / hii ;
+ hii2 = hi * hii ;
+ loop statement 
+ {
+ if statement hi == 10 
+ {
+ display "number is 10" ;
+ }
+ else if statement hi == 100
+ {
+ display "number is 100" ;
+ }
+ else statement
+ {
+ display "number not found" ;
+ }
+ hi = hi + 10 ;
+ if statement hi == 200
+ {
+ break loop
+ }
+ }
+ switch statement ( hii ) 
+ {
+ case statement ( 10 ) :
+ display "number is 10" ;
+ default of switch-case :
+ display "not matched" ;
+ }
+ return 0 ;
+}
+ 
